@@ -1,0 +1,15 @@
+{
+  "name": "task_manager/task_manager",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Mohamed-Irfan-git",
+      "email": "irfanmt29@gmail.com"
+    }
+  ],
+  "require": {}
+}
