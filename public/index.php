@@ -1,10 +1,8 @@
 <?php
-require_once __DIR__ . '/../vendor/autoload.php';
-use App\Controlls\TaskController;
-use App\Core\Database;
+$db = require_once __DIR__ . '/../migration/init.php';
 
-$config = require __DIR__ . '/../config/config.php';
-$db = Database::connect($config['db']);
+use App\Controlls\TaskController;
+
 $controller = new TaskController($db);
 $controller->handleRequest();
 $tasks = $controller->getTask(); // also rename method to getTasks()
